@@ -1,0 +1,181 @@
+{
+  "actions": [],
+  "allow_copy": 0,
+  "allow_events_in_timeline": 0,
+  "allow_guest_to_view": 0,
+  "allow_import": 0,
+  "allow_rename": 0,
+  "autoname": "Shiprocket Settings",
+  "creation": "2026-06-30 00:00:00.000000",
+  "doctype": "DocType",
+  "document_type": "Setup",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "enabled",
+    "credentials_section",
+    "api_email",
+    "api_password",
+    "webhook_section",
+    "webhook_secret",
+    "operations_section",
+    "create_on_delivery_note_submit",
+    "auto_assign_awb",
+    "auto_request_pickup",
+    "pickup_location",
+    "cod_payment_method",
+    "defaults_section",
+    "default_length_cm",
+    "default_breadth_cm",
+    "default_height_cm",
+    "default_weight_kg",
+    "fallback_phone",
+    "fallback_email",
+    "debug"
+  ],
+  "fields": [
+    {
+      "default": "0",
+      "fieldname": "enabled",
+      "fieldtype": "Check",
+      "label": "Enabled"
+    },
+    {
+      "fieldname": "credentials_section",
+      "fieldtype": "Section Break",
+      "label": "Credentials"
+    },
+    {
+      "fieldname": "api_email",
+      "fieldtype": "Data",
+      "label": "API Email"
+    },
+    {
+      "fieldname": "api_password",
+      "fieldtype": "Password",
+      "label": "API Password"
+    },
+    {
+      "fieldname": "webhook_section",
+      "fieldtype": "Section Break",
+      "label": "Webhook"
+    },
+    {
+      "description": "Optional shared secret. Add it to the Shiprocket webhook URL as ?secret=VALUE or send it in X-Shiprocket-Webhook-Secret.",
+      "fieldname": "webhook_secret",
+      "fieldtype": "Password",
+      "label": "Webhook Secret"
+    },
+    {
+      "fieldname": "operations_section",
+      "fieldtype": "Section Break",
+      "label": "Operations"
+    },
+    {
+      "default": "1",
+      "fieldname": "create_on_delivery_note_submit",
+      "fieldtype": "Check",
+      "label": "Create Shiprocket Order on Delivery Note Submit"
+    },
+    {
+      "default": "0",
+      "fieldname": "auto_assign_awb",
+      "fieldtype": "Check",
+      "label": "Auto Assign AWB"
+    },
+    {
+      "default": "0",
+      "fieldname": "auto_request_pickup",
+      "fieldtype": "Check",
+      "label": "Auto Request Pickup"
+    },
+    {
+      "fieldname": "pickup_location",
+      "fieldtype": "Data",
+      "label": "Pickup Location"
+    },
+    {
+      "default": "Prepaid",
+      "fieldname": "cod_payment_method",
+      "fieldtype": "Select",
+      "label": "Default Payment Method",
+      "options": "Prepaid\nCOD"
+    },
+    {
+      "fieldname": "defaults_section",
+      "fieldtype": "Section Break",
+      "label": "Fallback Defaults"
+    },
+    {
+      "default": "10",
+      "fieldname": "default_length_cm",
+      "fieldtype": "Float",
+      "label": "Default Length (cm)",
+      "reqd": 1
+    },
+    {
+      "default": "10",
+      "fieldname": "default_breadth_cm",
+      "fieldtype": "Float",
+      "label": "Default Breadth (cm)",
+      "reqd": 1
+    },
+    {
+      "default": "10",
+      "fieldname": "default_height_cm",
+      "fieldtype": "Float",
+      "label": "Default Height (cm)",
+      "reqd": 1
+    },
+    {
+      "default": "0.5",
+      "fieldname": "default_weight_kg",
+      "fieldtype": "Float",
+      "label": "Default Weight (kg)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "fallback_phone",
+      "fieldtype": "Data",
+      "label": "Fallback Phone"
+    },
+    {
+      "fieldname": "fallback_email",
+      "fieldtype": "Data",
+      "label": "Fallback Email"
+    },
+    {
+      "default": "0",
+      "fieldname": "debug",
+      "fieldtype": "Check",
+      "label": "Debug Logging"
+    }
+  ],
+  "hide_toolbar": 0,
+  "idx": 0,
+  "issingle": 1,
+  "links": [],
+  "modified": "2026-06-30 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Shiprocket ERPNext",
+  "name": "Shiprocket Settings",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "quick_entry": 0,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}

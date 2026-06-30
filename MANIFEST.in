@@ -1,0 +1,4 @@
+recursive-include shiprocket_erpnext *.json
+recursive-include shiprocket_erpnext *.py
+include README.md
+

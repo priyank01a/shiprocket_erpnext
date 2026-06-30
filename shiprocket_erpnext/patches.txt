@@ -1,0 +1,2 @@
+shiprocket_erpnext.patches.v1_0.create_delivery_note_fields
+shiprocket_erpnext.patches.v1_0.add_webhook_delivery_note_fields
